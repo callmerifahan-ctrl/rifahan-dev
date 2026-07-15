@@ -134,6 +134,36 @@ p{
     margin:30px 0;
 }
 
+.project-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:18px;
+    flex-wrap:wrap;
+}
+
+.project-btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-btn.live{
+    background:var(--primary);
+    color:white;
+}
+
+.project-btn.github{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.project-btn:hover{
+    transform:translateY(-3px);
+}
+
 /* ===== PROJECT CARD ===== */
 
 .project-card{
@@ -515,6 +545,12 @@ font-size:15px;
 margin-bottom:20px;
 font-weight:600;
 
+}
+
+.project-status{
+    font-size:.85rem;
+    color:#888;
+    margin-bottom:15px;
 }
 
 .in-progress{
@@ -966,6 +1002,10 @@ section{
     .btn{
         width:100%;
         max-width:250px;
+    }
+
+    .project-buttons{
+    flex-direction:column;
     }
 
     /* NAVBAR */
