@@ -741,6 +741,14 @@ cursor:default;
 
 }
 
+.contact-card .primary-btn {
+    margin-top: 15px;
+}
+
+.contact-card .primary-btn:hover {
+    background: #F39A80;
+}
+
 /* =================================
    FOOTER
 ================================= */
